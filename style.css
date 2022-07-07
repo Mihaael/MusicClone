@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logoSpotify{
+    width: 130px;
+    height: 40px;
+}
+.buttonGroupHeader{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navBtn{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    transition: 0,4s;
+    padding: 10px;
+    font-weight: bold;
+}
+.navBtn:hover{
+    font-size: 17px;
+    color: rgba(8, 248, 20, 0.993);
+}
+.nav{
+    background-color: rgb(29, 117, 222);
+    height: 38vh;
+}
+.navContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 380px;
+}
+.h1Nav{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.buttonGroupNav{
+    color: white;
+    padding-top: 35px;
+}
+.paragraphNav{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+}
+.paragraphNavBottom{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 380px
+}
+.editParagraph{
+    font-size: 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttonNav1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    border: 2px solid rgb(24, 23, 23);
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 15px 30px 15px 30px;
+    align-items: center;
+    font-weight: bold;
+    transition: 0,4s;
+}
+.buttonNav2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 100px;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+    font-weight: bold;
+    transition: 0,4s;
+}
+.buttonNav1:hover{
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.buttonNav2:hover{
+    font-size: 15px;
+    background-color: rgba(21, 72, 134, 0.288);
+}
+.section{
+    padding-bottom: 100px;
+}
+.sectionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagensSectionContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imagensSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 10px;
+}
+.paragraphSectionImages{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraphSectionImagesMin{
+    font-family: arial;
+    font-size: 15px;
+}
+.imageSectionEditt{
+    width: 140px;
+    height: 140px;
+}
+.h1Section{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px;
+    padding-right: 20px;
+}
+.paragraphSection{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.imagesCardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagesCardContainer{
+    padding: 20px;
+    gap: 8px;
+}
+.cardImagesEdit{
+    width: 30px;
+}
+.imgPremium{
+    padding-top: 60px;
+}
+.p2{
+    padding-top: 200px;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid rgb(207, 207, 207);
+    width: 260px;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 8px;
+}
+.cardParagraphBlue{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 46%;
+    height: 26px;
+    padding: 4px 4px;
+    border: 2px solid transparent;
+    background-color: rgb(46, 119, 208);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.cardParagraphStrong{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.cardParagraphNormal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.cardParagraphBorder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(68, 67, 67, 0.644);
+    width: 100%;
+}
+.cardButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    border: 2px solid rgb(24, 23, 23);
+    cursor: pointer;
+    border-radius: 100px;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    font-weight: bold;
+    transition: 0,4s;
+}
+.cardButton:hover{
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+}
+.paragraphCardTerms{
+    font-family: arial;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    color: rgb(129, 127, 127);
+}
+.editParagraphCard{
+    font-size: 11px;
+    color: rgba(112, 110, 110, 0.918);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cardParagraphHeader{
+    height: 20%;
+}
+.cardParagraphSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    height: 40%;
+    padding-top: 10px;
+}
+.cardBottom{
+    height: 30%;
+}
+.footer{
+    background-color: black;
+    height: 60vh;
+    padding-top: 30px;
+    
+}
+.footerContainer{
+    display: flex;
+    gap: 60px;
+    padding-left: 400px;
+    padding-top: 100px;
+}
+.paragraphFooterContainer{
+    height: 30vh;
+    padding-top: 20px;
+}
+.footerTitle{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: start;
+    padding: 10px;
+}
+.footerLinkText{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: start;
+    cursor: pointer;
+    transition: 0,4s;
+}
+.footerIconsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    width: 20%;
+    background-color: black;
+    gap: 20px;
+}
+.footerIcons{
+    background-color: #222326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 20%;
+    padding: 15px;
+}
+.footerIconsEdit{
+    width: 90%;
+    height: 20%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0,4s;
+}
+.footerIconsEdit:hover{
+    background-color: #1ed760;
+}
+.footerLinkText:hover{
+    color: #1ed760;
+}
+.footerLastParagraphContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    padding-right: 20px;
+}
+.FooterLastParagraph{
+    display: flex;
+    gap: 30px;
+}
+.FooterLastParagraph2{
+    display: flex;
+    flex-direction: column;
+}
+.lastParagraphEdit{
+    color: #919496;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0,4;
+}
+.lastParagraphEdit2{
+    color: #919496;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.lastParagraphEdit:hover{
+    color: #1ed760;
+}
