@@ -4,13 +4,20 @@
     box-sizing: border-box;
     font-size: 20px;
 }
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .header{
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .logoSpotify{
     width: 130px;
@@ -20,6 +27,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .navBtn{
     color: white;
@@ -38,15 +46,18 @@
     color: rgba(8, 248, 20, 0.993);
 }
 .nav{
+    width: 100%;
     background-color: rgb(29, 117, 222);
-    height: 38vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 .navContainer{
     color: white;
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-    padding-left: 380px;
+    padding-left: 40px;
 }
 .h1Nav{
     font-size: 40px;
@@ -67,8 +78,9 @@
     font-size: 11px;
     color: white;
     display: flex;
-    padding-top: 40px;
-    padding-left: 380px
+    padding-top: 20px;
+    padding-left:40px;
+    padding-bottom: 20px;
 }
 .editParagraph{
     font-size: 11px;
@@ -111,7 +123,10 @@
     background-color: rgba(21, 72, 134, 0.288);
 }
 .section{
+    width: 100%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .sectionContainer{
     display: flex;
@@ -123,6 +138,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .imagensSection{
     display: flex;
@@ -144,6 +160,13 @@
     width: 140px;
     height: 140px;
 }
+.h1AndParagraphSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 .h1Section{
     font-size: 35px;
     font-weight: bold;
@@ -152,14 +175,17 @@
     padding-right: 20px;
 }
 .paragraphSection{
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
     font-size: 16px;
+    flex-wrap: wrap;
 }
 .imagesCardContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .imagesCardContainer{
     padding: 20px;
@@ -189,7 +215,7 @@
     align-items: flex-start;
     border: 2px solid rgb(207, 207, 207);
     width: 260px;
-    height: 60vh;
+    height: 80vh;
     padding: 15px;
     border-radius: 8px;
 }
@@ -274,16 +300,22 @@
     height: 30%;
 }
 .footer{
+    display: flex;
     background-color: black;
-    height: 60vh;
+    width: 100%;
+    height: auto;
     padding-top: 30px;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .footerContainer{
     display: flex;
-    gap: 60px;
-    padding-left: 400px;
-    padding-top: 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containerParagraphFooterContainer{
+    display: flex;
+    gap: 10px;
 }
 .paragraphFooterContainer{
     height: 30vh;
@@ -309,12 +341,11 @@
 }
 .footerIconsContainer{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    height: 70px;
-    width: 20%;
-    background-color: black;
-    gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
 }
 .footerIcons{
     background-color: #222326;
@@ -323,12 +354,13 @@
     align-items: center;
     border: 2px solid transparent;
     border-radius: 100%;
-    width: 20%;
+    width: 50px;
+    min-height: 20px;
     padding: 15px;
 }
 .footerIconsEdit{
-    width: 90%;
-    height: 20%;
+    width: 25px;
+    min-height: 25px;
     background-color: #fff;
     cursor: pointer;
     transition: 0,4s;
@@ -341,13 +373,14 @@
 }
 .footerLastParagraphContainer{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 70px;
-    padding-right: 20px;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
 }
 .FooterLastParagraph{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .FooterLastParagraph2{
     display: flex;
@@ -369,4 +402,107 @@
 }
 .lastParagraphEdit:hover{
     color: #1ed760;
+}
+@media (max-width: 1200px){
+    .imagensSectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .paragraphSection{
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px){
+    .paragraphSection{
+        font-size: 10px;
+    }
+    .h1Section{
+        font-size: 22px;
+    }
+}
+@media (max-width: 430px){
+    .imagensSectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 980px){
+    .navContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex start;
+    }
+}
+@media (max-width: 990px){
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 522px){
+    .containerParagraphFooterContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 552px){
+    .imagensSectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .sectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media (max-width: 766px){
+    .buttonGroupNav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buttonNav1{
+        width: 95%;
+    }
+    .buttonNav2{
+        width: 95%;
+    }
 }
